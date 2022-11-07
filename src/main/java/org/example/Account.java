@@ -39,13 +39,18 @@ public class Account {
     public int getPin() {
         return pin;
     }
-    public String getAccountNumber(){
-        return  accountNumber;
+
+    public String getAccountNumber() {
+        return accountNumber;
     }
-    public double getBalance(){
-       return balance;
+
+    public double getBalance() {
+        return balance;
 
     }
 
+    public double withdraw(double cashToGet) {
+        return balance = balance - cashToGet;
+    }
 
 }
