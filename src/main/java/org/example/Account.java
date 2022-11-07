@@ -52,5 +52,19 @@ public class Account {
     public double withdraw(double cashToGet) {
         return balance = balance - cashToGet;
     }
+    public double deposit(double cashToDeposit){
+        return balance=balance + cashToDeposit;
+    }
+    public double credit(double moneyToBorrow){
+        double check=balance*0.1;
+        if (check>moneyToBorrow){
 
+                        return balance += moneyToBorrow;
+
+        }else {
+            System.out.println("Kredyt nie został przyznany");
+            return balance;
+        }
+    }
 }
+
