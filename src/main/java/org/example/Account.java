@@ -9,19 +9,43 @@ public class Account {
     private String accountNumber;
     private double balance;
     private int pin;
-    Account(String name,String lastname,String pesel,String login, String accountNumber, double balance, int pin){
-    this.name=name ;
-    this.lastname=lastname;
-            this.pesel=pesel;
-            this.login=login;
-            this.accountNumber=accountNumber;
-            this.balance=balance;
-            this.pin=pin;
-}
 
-        public String getLogin(){
-            return login;
+    Account(String name, String lastname, String pesel, String login, String accountNumber, double balance, int pin) {
+        this.name = name;
+        this.lastname = lastname;
+        this.pesel = pesel;
+        this.login = login;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.pin = pin;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public String getPesel() {
+        return pesel;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public int getPin() {
+        return pin;
+    }
+    public String getAccountNumber(){
+        return  accountNumber;
+    }
+    public double getBalance(){
+       return balance;
 
     }
+
 
 }

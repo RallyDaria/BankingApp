@@ -19,8 +19,31 @@ public class Main {
 
         System.out.println("podaj kod PIN");
         int pin=sc.nextInt();
+        if (pin==account1.getPin())
 
+
+        System.out.println(" MENU - Wybierz numerycznie operacje która cię interesuje ");
+        System.out.println("\n 1. Wpłata \n 2. Wypłata \n 3. Sprawdzenie salda konta \n 4. Weź Kredyt  \n 5. Wyjście");
+        System.out.println(" Twój wybór");
+        int wybor=sc.nextInt();
+        switch (wybor){
+            case 1:
+                System.out.println("Wpłata gotówki ");
+                break;
+            case 2:
+                System.out.println("Wypłata gotówki");
+                break;
+            case 3:
+                System.out.println("Sprawdzenie salda konta");
+                break;
+            case 4:
+                System.out.println("Weź Kredyt");
+                break;
+            case 5:
+                System.out.println("Do widzenia ");
+                        }
 
     }
+
     }
 
